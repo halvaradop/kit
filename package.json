@@ -1,0 +1,35 @@
+{
+  "name": "@halvaradop/kit",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A toolkit package for @halvaradop projects.",
+  "type": "module",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run build --parallel",
+    "format": "prettier --write . --cache --cache-location .cache/.prettiercache",
+    "format:check": "prettier --check . --cache --cache-location .cache/.prettiercache",
+    "lint": "eslint . --cache --cache-location .cache/.eslintcache",
+    "lint:fix": "eslint . --fix --cache --cache-location .cache/.eslintcache",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/halvaradop/kit.git"
+  },
+  "bugs": "https://github.com/halvaradop/kit/issues",
+  "homepage": "https://github.com/halvaradop/kit#readme",
+  "keywords": ["toolkit", "halvaradop", "kit", "typescript", "eslint", "prettier", "turborepo", "pnpm", "nextjs", "react"],
+  "author": "Hernan Alvarado <hernanvid123@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@halvaradop/eslint-config": "latest",
+    "@halvaradop/prettier-config": "^1.2.1",
+    "@halvaradop/tsconfig": "^1.1.2",
+    "eslint": "^9.34.0",
+    "prettier": "^3.0.0",
+    "turbo": "^2.5.6",
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "pnpm@10.15.0"
+}
