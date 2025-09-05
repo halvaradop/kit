@@ -9,7 +9,7 @@ importers:
   .:
     devDependencies:
       '@halvaradop/eslint-config':
-        specifier: latest
+        specifier: ^1.2.0
         version: 1.2.0(@typescript-eslint/parser@8.42.0(eslint@9.34.0)(typescript@5.9.2))(eslint@9.34.0)(prettier@3.6.2)(turbo@2.5.6)(typescript@5.9.2)
       '@halvaradop/prettier-config':
         specifier: ^1.2.1

@@ -35,7 +35,7 @@
   "author": "Hernan Alvarado <hernanvid123@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@halvaradop/eslint-config": "latest",
+    "@halvaradop/eslint-config": "^1.2.0",
     "@halvaradop/prettier-config": "^1.2.1",
     "@halvaradop/tsconfig": "^1.1.2",
     "eslint": "^9.34.0",
