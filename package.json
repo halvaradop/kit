@@ -9,8 +9,9 @@
     "dev": "turbo run build --parallel",
     "format": "prettier --write . --cache --cache-location .cache/.prettiercache",
     "format:check": "prettier --check . --cache --cache-location .cache/.prettiercache",
-    "lint": "eslint . --cache --cache-location .cache/.eslintcache",
-    "lint:fix": "eslint . --fix --cache --cache-location .cache/.eslintcache",
+    "lint": "turbo run lint lint:root",
+    "lint:fix": "turbo run lint:fix",
+    "lint:root": "eslint . --cache --cache-location .cache/.eslintcache",
     "typecheck": "tsc --noEmit"
   },
   "repository": {
@@ -19,7 +20,18 @@
   },
   "bugs": "https://github.com/halvaradop/kit/issues",
   "homepage": "https://github.com/halvaradop/kit#readme",
-  "keywords": ["toolkit", "halvaradop", "kit", "typescript", "eslint", "prettier", "turborepo", "pnpm", "nextjs", "react"],
+  "keywords": [
+    "toolkit",
+    "halvaradop",
+    "kit",
+    "typescript",
+    "eslint",
+    "prettier",
+    "turborepo",
+    "pnpm",
+    "nextjs",
+    "react"
+  ],
   "author": "Hernan Alvarado <hernanvid123@gmail.com>",
   "license": "MIT",
   "devDependencies": {
